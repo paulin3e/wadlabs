@@ -21,19 +21,107 @@
     <!-- Add header semantic tag -->
     <!-- Add main heading -->
     <!-- Make "Rockstar Games" bold -->
-    Grand Theft Auto VI
-    The next generation open-world crime game by Rockstar Games.
+    <header>
+        <h1>Grand Theft Auto VI</h1>
+        <p>
+            The next generation open-world crime game by
+            <b>Rockstar Games.</b>
+        </p>
+    </header>
+
+
+
 
     <!-- Add navigation semantic tag -->
     <!-- Convert items into an unordered list -->
     <!-- Wrap each item in a link -->
     <!-- Add id links pointing to sections -->
-    Navigation
-    About GTA 6
-    Features
-    Characters
+
+    <nav>
+        <!--unordered list-->
+        <ul>
+            <li>
+                <!--internal (another section on the same page)
+                     external
+                         - different page on the same website
+                         - different page on another webste-->
+                <a href="#about">About GTA 6</a>
+
+            </li> <!--list item-->
+            <li>
+                <a href="#features">Features</a>
+            </li> <!--list item-->
+
+            <li>
+                <a href="#characters">Characters</a>
+            </li> <!--list item-->
+            <li>
+                <a href="https://www.rockstargames.com/gta-v" target="_blank">
+
+                    Official Page</a>
+            </li> <!--list item-->
+        </ul>
+    </nav>
+
 
     <!-- Add main semantic tag -->
+    <main>
+
+        <section id="about" name="about">
+            <h2>About the Game</h2>
+            <p>
+                <b>GTA 6</b>is expected to take players back to <i>Vice City</i> with a massive open world, new
+                characters, and
+                improved gameplay
+                mechanics.
+            </p>
+        </section>
+
+        <section id="features">
+            <h2>Expected Features</h2>
+
+            <h4>Gameplay Features</h4>
+            <ul> <!--unorderd list-->
+                <li>Open world exploration</li>
+                <li>Dynamic weather system</li>
+                <li>Multiple playable characters</li>
+                <li>Improved AI</li>
+            </ul>
+
+            <h4>New Improvements</h4>
+            <ol> <!--ordered list-->
+                <li>Better graphics</li>
+                <li>Larger map</li>
+                <li>Realistic NPC behavior</li>
+                <li>Enhanced vehicles</li>
+            </ol>
+        </section>
+
+        <section id="characters">
+            <h2>Main Characters</h2>
+            <article>
+                <h5>Lucia</h5>
+                <p>
+                    Lucia is one of the <b>first female protagonists</b> in GTA history. She is known for her bold
+                    personality and criminal
+                    background.
+                </p>
+            </article>
+            <article>
+                <h5>Jason</h5>
+                <p>
+                    Jason partners with Lucia in a story inspired by <i>Bonnie and Clyde</i> -style adventures.
+                </p>
+            </article>
+        </section>
+
+        <section id="logo">
+            <h2>Game Preview</h2>
+            <img src="https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FJason_and_Lucia_01_With_Logos_landscape.8596f77a.jpg&w=3840&q=75"
+                alt="GTA 6 Logo image" width="50%">
+
+        </section>
+    </main>
 
     <!-- Add section with id="about" -->
     <!-- Add section heading -->
@@ -41,27 +129,18 @@
     <!-- Make "GTA 6" bold -->
     <!-- Make "Vice City" italic -->
     <!-- Add title attribute to second paragraph -->
-    About the Game
-    GTA 6 is expected to take players back to Vice City with a massive open world, new characters, and improved gameplay
-    mechanics.
-    This paragraph includes an example of an attribute (tooltip text).
+
+
+
 
     <!-- Add section with id="features" -->
     <!-- Add subsection headings -->
     <!-- Convert first group into unordered list -->
     <!-- Convert second group into ordered list -->
-    Expected Features
-    Gameplay Features
-    Open world exploration
-    Dynamic weather system
-    Multiple playable characters
-    Improved AI
 
-    New Improvements
-    Better graphics
-    Larger map
-    Realistic NPC behavior
-    Enhanced vehicles
+
+
+
 
     <!-- Add section with id="characters" -->
     <!-- Use article tag for each character -->
@@ -69,28 +148,30 @@
     <!-- Add paragraphs -->
     <!-- Make "first female protagonists" bold -->
     <!-- Make "Bonnie and Clyde" italic -->
-    Main Characters
-    Lucia
-    Lucia is one of the first female protagonists in GTA history. She is known for her bold personality and criminal
-    background.
 
-    Jason
-    Jason partners with Lucia in a story inspired by Bonnie and Clyde-style adventures.
+
+
+
+
 
     <!-- Add section for image -->
     <!-- Add image tag below -->
     <!-- Use src attribute -->
     <!-- Use alt attribute -->
     <!-- Use width attribute -->
-    Game Preview
-    GTA 6 Logo image
+
+
 
     <!-- Close main semantic tag -->
 
     <!-- Add footer semantic tag -->
+    <footer>
+        <hr>
+        <p>© 2026 GTA 6 Fan Page | Created for HTML Learning</p>
+    </footer>
     <!-- Wrap content in paragraph -->
     <!-- Add horizontal rule above footer -->
-    © 2026 GTA 6 Fan Page | Created for HTML Learning
+
 </body>
 
 </html>
