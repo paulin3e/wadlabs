@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="simple-form">
+        <h2>Simple Form</h2>
+        <!--the form element-->
+        <form method="post" action="process.php" enctype="multipart/form-data" id="simple-form" name="simple-form"
+            class="forms">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+            <div class="form-group">
+                <input type="submit" name="login" value="Login">
+                <input type="reset" name="reset" value="Clear">
+            </div>
+        </form>
+    </section>
+    <section id="chicken-recipe-form">
+        <h2>Chicken Recipe Form</h2>
+        <form method="post" action="process2.php">
+            <div>
+                <label for="recipe-title">
+                    Recipe Title
+                </label>
+                <input type="text" name="recipe-title" required>
+            </div>
+            <div>
+                <label for="dry-ingredients">
+                    Dry Ingredients
+                </label>
+                <input id="salt" type="checkbox" name="dry-ingredients" value="salt" required> Salt
+                <input id="cayene" type="checkbox" name="dry-ingredients" value="cayene" required> Cayene
+                <input id="thyme" type="checkbox" name="dry-ingredients" value="thyme" required> Thyme
+            </div>
+            <div class="form-group">
+                <label for="grilled">Grilled</label>
+                <input name="grilled" id="grilled" value="0" type="radio"> No
+                <input name="grilled" id="grilled-yes" value="1" type="radio">
+            </div>
+            <div class="form-group">
+                <label for="steps">Steps</label>
+                <textarea name="steps" id="steps"></textarea>
+            </div>
+             <div class="form-group">
+                <input type="submit" name="submit" value="Submit">
+                <input type="reset" name="reset" value="Reset">
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>
