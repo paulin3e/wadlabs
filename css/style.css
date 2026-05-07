@@ -1,4 +1,29 @@
 /*an external css file*/
-#features{
+#features {
     background-color: beige;
+}
+
+body,
+header,
+h1,
+section {
+    border-style: dotted;
+    border-color: turquoise;
+    border-width: 2px;
+}
+
+h1 {
+    /*long hand*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    /*short hand*/
+    padding: 10px;
+    /* TRouBLe */
+    padding: 5px 10px 13px 50px;
+
+    /* this applies to all four margins */
+    margin: 5px;
 }
