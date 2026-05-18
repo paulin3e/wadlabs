@@ -112,3 +112,38 @@ header > b{
    letter-spacing: 2px;
    font-size: 0.95cm;
 }
+
+nav{
+   margin-top: 10px;
+}
+
+nav ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+
+   display: flex;
+   justify-content: center;
+   gap: 10px;
+}
+
+nav ul li a{
+   color: var(--col-bg-deep);
+   text-decoration: none;
+   font-size: 1.1em;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+
+   padding: 8px 18px;
+   border: 1px solid var(--col-cyan-light);
+
+   border-width: 1px;
+   border-style: solid;
+   border-color: var(--col-cyan-light);
+   border-radius: 8px;
+}
+
+nav ul li a:hover{
+   background-color: var(--col-cyan);
+   border-color: var(--col-pink-soft);
+}
