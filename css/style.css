@@ -18,56 +18,60 @@ Variables defined here become available everywhere in the stylesheet.
 
 :root {
 
-    /* ===============================
+   /* ===============================
        BACKGROUND COLORS
        =============================== */
 
-    /* Deep night blue */
-    --col-bg-deep: #08131f;
+   /* Deep night blue */
+   --col-bg-deep: #08131f;
 
-    /* Main dark surface */
-    --col-bg-mid: #102030;
+   /* Main dark surface */
+   --col-bg-mid: #102030;
 
-    /* Transparent glass effect */
-    --col-bg-light: rgba(16, 32, 48, 0.82);
+   /* Transparent glass effect */
+   --col-bg-light: rgba(16, 32, 48, 0.82);
 
-    /* ===============================
+   /* ===============================
        PRIMARY ACCENT COLORS
        =============================== */
 
-    /* Neon cyan */
-    --col-cyan: #00d5d8;
+   /* Neon cyan */
+   --col-cyan: #00d5d8;
 
-    /* Bright electric cyan */
-    --col-cyan-light: #4ff6ea;
+   /* Bright electric cyan */
+   --col-cyan-light: #4ff6ea;
 
-    /* GTA VI pink/coral */
-    --col-coral: #ff4f87;
+   /* GTA VI pink/coral */
+   --col-coral: #ff4f87;
 
-    /* Soft neon pink */
-    --col-pink-soft: #ff9bb3;
+   /* Soft neon pink */
+   --col-pink-soft: #ff9bb3;
 
-    /* Sunset orange */
-    --col-sunset: #ff9f43;
+   /* Sunset orange */
+   --col-sunset: #ff9f43;
 
-    /* Warm amber */
-    --col-amber: #ffc46b;
+   /* Warm amber */
+   --col-amber: #ffc46b;
 
-    /* ===============================
+   /* ===============================
        TEXT COLORS
        =============================== */
 
-    /* Main light text */
-    --col-cream: #fff8f2;
+   /* Main light text */
+   --col-cream: #fff8f2;
 
-    /* Secondary muted text */
-    --col-muted: #7ea0b3;
+   /* Secondary muted text */
+   --col-muted: #7ea0b3;
 }
 
-/*
-example usage
-using the var keyword
-body{
-color: var(--col-cream)
+body {
+   font-family: 'Instrument Sans', sans-serif;
+   font-size: 12px;
+   font-weight: 400;
+   font-style: normal;
 }
-*/
+
+h1,
+h2 {
+   font-family: 'Young Serif', serif;
+}
