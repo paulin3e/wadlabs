@@ -12,171 +12,132 @@
         content="Your ultimate GTA 6 fan page featuring the latest news, trailers, gameplay details, map leaks, characters, release updates, and community discussions for Grand Theft Auto VI. Stay updated with everything GTA 6">
     <meta name="keywords"
         content="GTA 6, Grand Theft Auto VI, GTA VI, GTA 6 news, GTA 6 trailer, GTA 6 gameplay, GTA 6 release date, Rockstar Games, Vice City, GTA 6 map, GTA 6 characters, GTA 6 leaks, GTA 6 updates, GTA 6 fan page, Grand Theft Auto 6">
+    <!--important for responsive design-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--5. title -->
+    <!--5. title -->
     <title>GTA VI</title>
     <!-- other elements that go here-->
     <!-- styles, scripts, favicon -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Young+Serif&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Playwrite+GB+J+Guides:ital@0;1&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="https://www.rockstargames.com/VI/favicon.ico">
+
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="https://www.rockstargames.com/VI/favicon.ico?authuser=1&hl=en">
-    <!-- embedded styles -->
-    <style>
-
-    </style>
 </head>
 <!-- 6. the body (content goes here)-->
 
 <body>
+    <!-- Add header semantic tag -->
+    <!-- Add main heading -->
+    <!-- Make "Rockstar Games" bold -->
     <header>
-        <!-- an inline style -->
-        <h1 id="mainHeading" class="headings" name="title">Grand Theft Auto VI</h1>
+        <!--h1,h2,h3,h4,h5,h6 -->
+        <h1>Grand Theft Auto VI</h1>
 
         The next generation open-world crime game by <b>Rockstar Games</b>.
 
+
         <!-- Add navigation semantic tag -->
-
         <!-- Convert items into an unordered list -->
-
-        <!-- Wrap each item in a link (hyperlinks) -->
-
+        <!-- Wrap each item in a link -->
         <!-- Add id links pointing to sections -->
-
-        <nav> <!-- semantic tag-->
-
-            <ul> <!-- an unordered list -->
-
+        <nav>
+            <!-- unordered list -->
+            <ul>
                 <li>
-
-                    <!-- a link to a different page-->
-
-                    <a href="#about">About GTA 6 </a>
-
-                </li> <!-- a list item -->
-
+                    <!--internal -->
+                    <a href="#about">AboutGTA 6</a>
+                </li><!--list item-->
                 <li>
-
-                    <!-- a link to another section of the current page-->
-
                     <a href="#features">Features</a>
-
-                </li> <!-- a list item -->
-
+                </li><!--list item-->
                 <li>
-
-                    <!-- a link to another section of the current page-->
-
                     <a href="#characters">Characters</a>
-
-                </li> <!-- a list item -->
-
+                </li><!--list item-->
                 <li>
-
-                    <!-- a link to a different website-->
-
-                    <a href="https://www.rockstargames.com/VI" target="_blank">
-
-                        Official Page
-
-                    </a>
-
-                </li> <!-- a list item -->
-
+                    <a href="https://www.rockstargames.com/games/V" target="_blank">Official Page</a>
+                </li><!--list item-->
             </ul>
-
         </nav>
-
     </header>
-
-    <!-- Add main semantic tag nav,aside, article, section-->
+    <!-- Add main semantic tag -->
     <main>
-        <!-- Add section with id="about" -->
-        <!-- Add section heading -->
-        <!-- Add paragraphs -->
-        <!-- Make "GTA 6" bold -->
-        <!-- Make "Vice City" italic -->
         <section id="about" name="about">
-            <h2>About the Game</h2>
-            <p> <b>GTA 6</b> is expected to take players back to
-                <i>Vice City</i> with a massive open world, new characters, and improved
-                gameplay mechanics.
+            <h2 class="section-heading">About the Game </h2>
+            <p>
+                <b>GTA 6</b> is expected to take players back to <i>Vice City</i> with a massive open world, new
+                characters, and improved gameplay
+                mechanics.
             </p>
         </section>
-
-
-        <!-- Add section with id="features" -->
-        <!-- Add subsection headings -->
-        <!-- Convert first group into unordered list -->
-        <!-- Convert second group into ordered list -->
         <section id="features">
-            <h2>Expected Features</h2>
-
-            <h5>Gameplay Features</h5>
-            <ul>
-                <li>Open world exploration</li> <!-- list item -->
+            <h2 class="section-heading">Expected Features</h2>
+            <h5>
+                Gameplay Features</h5>
+            <ul><!--unordered list-->
+                <li>
+                    Open world exploration</li>
                 <li>Dynamic weather system</li>
                 <li>Multiple playable characters</li>
                 <li>Improved AI</li>
-            </ul> <!-- unordered list (ul) bullets (. . .)-->
+            </ul>
 
             <h5>New Improvements</h5>
-            <ol>
+            <ol><!--ordered list-->
                 <li>Better graphics</li>
                 <li>Larger map</li>
                 <li>Realistic NPC behavior</li>
                 <li>Enhanced vehicles</li>
-            </ol> <!-- ordered list (ol) 1,2,3.. -->
-        </section>
+            </ol>
 
-        <!-- Add section with id="characters" -->
-        <!-- Use article tag for each character -->
-        <!-- Add headings for names -->
-        <!-- Add paragraphs -->
-        <!-- Make "first female protagonists" bold -->
-        <!-- Make "Bonnie and Clyde" italic -->
+        </section>
         <section id="characters">
-            <h2>Main Characters</h2>
+            <h2 class="section-heading">Main Characters</h2>
             <div class="characters-grid">
-            <article>
-                <h4>Lucia</h4>
-                <p>Lucia is one of the first female protagonists in GTA history. She is known for her bold personality
-                    and criminal
-                    background.</p>
-            </article>
-            <article>
-                <h4>Jason</h4>
-                <p>Jason partners with Lucia in a story inspired by Bonnie and Clyde-style adventures.
-                </p>
-            </article>
+
+
+                <article>
+                    <h4>Lucia</h4>
+                    <p>
+                        Lucia is one of <b>the first female protagonists</b> in GTA history. She is known for her bold
+                        personality
+                        and criminal
+                        background.
+                    </p>
+                </article>
+                <article>
+                    <h4>Jason</h4>
+                    <p>
+                        Jason partners with Lucia in a story inspired by <i>Bonnie and Clyde</i>-style adventures.
+                    </p>
+                </article>
             </div>
         </section>
-
-        <!-- Add section for image -->
-        <!-- Add image tag below -->
-        <!-- Use src attribute -->
-        <!-- Use alt attribute -->
-        <!-- Use width attribute -->
         <section id="logo">
-            <h2>Game Preview</h2>
+            <h2 class="section-heading">Game Preview</h2>
             <img src="https://www.rockstargames.com/VI/_next/image?url=%2FVI%2F_next%2Fstatic%2Fmedia%2FJason_and_Lucia_01_With_Logos_landscape.8596f77a.jpg&w=3840&q=75"
-                alt="GTA 6 Logo image">
+                alt="GTA 6 Logo">
         </section>
-        <!-- Close main semantic tag -->
-    </main>
 
+    </main>
+    <!-- Add footer semantic tag -->
     <footer>
-        <!-- Add footer semantic tag -->
-        <!-- Wrap content in paragraph -->
-        <!-- Add horizontal rule above footer -->
         <hr>
-        <p> © 2026 GTA 6 Fan Page | Created for HTML Learning</p>
+        <p></p>
+        © 2026 GTA 6 Fan Page | Created for HTML Learning Purposes
+        </p>
     </footer>
+    <!-- Wrap content in paragraph -->
+    <!-- Add horizontal rule above footer -->
+    <script>
+        console.log("Embedded");
+    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
