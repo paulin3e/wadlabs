@@ -155,3 +155,26 @@ console.log(Object.values(student));
 
 //getting both keys and values
 console.log(Object.entries(student));
+
+// DOM - Document Object Model (tree-like)
+console.log(document);
+console.log(document);
+
+const heading = document.querySelector("#mainHeading");
+console.log(heading);
+const previewImage = document.querySelector("img");
+console.log(previewImage);
+const aboutSection = document.getElementById('about');
+console.log(aboutSection);
+
+const allSections = document.querySelectorAll('section');
+console.log(allSections);
+
+const allNavLinks = document.querySelectorAll("nav a");
+console.log(allNavLinks);
+
+let aboutParagraph = document.querySelector("#about p");
+
+//change its text
+aboutParagraph.textContent = "This text was changed!";
+aboutParagraph.computedStyleMap.color = "red";
