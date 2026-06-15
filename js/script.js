@@ -149,9 +149,9 @@ bbit_2b_students.forEach(function(student){
 
 //show looping of objects
 //getting keys
-console.log(student.keys())
+console.log(Object.keys(student));
 //getting the values of an object of an array
-console.log(student.values())
+console.log(Object.values(student));
 
 //getting both keys and values
-console.log(student.entries())
+console.log(Object.entries(student));
