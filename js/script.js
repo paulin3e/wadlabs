@@ -1,16 +1,16 @@
 /*let*/ age = 20;
-var course ="BBIT";
-const university="Strathmore ";
+var course = "BBIT";
+const university = "Strathmore ";
 
 //redeclaire
 /*let*/ age = 40;
 
-course ="BCOM";
+course = "BCOM";
 
-if(true){
- let time="11:30";
- var day ="4th ";
- const year = 2026;
+if (true) {
+  let time = "11:30";
+  var day = "4th ";
+  const year = 2026;
 
 
 }
@@ -23,38 +23,38 @@ if(true){
  * @param {int} height
  * @param {int} width
  * @returns {int} area 
- */ 
-function calculateArea(height, width){
-    if(height==null){
-  console.log('height missing!')
+ */
+function calculateArea(height, width) {
+  if (height == null) {
+    console.log('height missing!')
 
-    }else if(width==null){
-  console.log('width missing!')
+  } else if (width == null) {
+    console.log('width missing!')
 
-    }else{
-  let area = height * width;
-  return area;
+  } else {
+    let area = height * width;
+    return area;
 
-    }
-    
-   
+  }
 
- //console.log("function calculateArea")
-// alert("Function called/executed")
- }
 
-console.log(calculateArea(20,3));
+
+  //console.log("function calculateArea")
+  // alert("Function called/executed")
+}
+
+console.log(calculateArea(20, 3));
 console.log(calculateArea(20));
 console.log(calculateArea());
 
-const add =function add(number_1, number_2){
+const add = function add(number_1, number_2) {
   return number_1 + number_2;
 
 }
-console.log(add(4,2));
+console.log(add(4, 2));
 
-const multiply = (x,y) => x*y;
-console.log(multiply(2,5));
+const multiply = (x, y) => x * y;
+console.log(multiply(2, 5));
 
 
 const scores = [45, 56, 67, 67, 78];
@@ -68,18 +68,18 @@ console.log(scores[0]);
 //56
 console.log(scores[1]);
 
-let student_names = ["omondi","wafula","kiprotich","nyambane","toipan"];
+let student_names = ["omondi", "wafula", "kiprotich", "nyambane", "toipan"];
 
 //print out kiprotich on the console window
 console.log(student_names[2]);
 
 let governors = [
-    [47,"Johnson Sakaja"]
-    [1,"Abdullswamad Sherrif"],
-    [21,"Irungu Kang'ata"]
+  [47, "Johnson Sakaja"]
+  [1, "Abdullswamad Sherrif"],
+  [21, "Irungu Kang'ata"]
 ];
 //The governor of county number 1 is Absulswamad Sherrif
-console.log("The governor of county number", governors[1][0],"is",governors[1][1]);
+console.log("The governor of county number", governors[1][0], "is", governors[1][1]);
 
 //map(perform an operation on each element)
 let doubled = scores.map(x => x * 2); //multiply each scores by 2
@@ -93,21 +93,21 @@ console.log("The class has", student_names.length, "students");
 console.log("Kenya has", governors.length, "governors");
 
 //for in
-for(let index in scores){
-  console.log(score [index]);
+for (let index in scores) {
+  console.log(score[index]);
 }
 
 //for of
-for(let score of scores){
+for (let score of scores) {
   console.log(score);
 }
 
 //for each
-scores.forEach(function(score){
-  console.log("score: ",score);
+scores.forEach(function (score) {
+  console.log("score: ", score);
 });
 
-const studentn= {
+const studentn = {
   name: "Alice",
   age: 20,
   passed: true,
@@ -116,15 +116,15 @@ const studentn= {
   course: "BBIT",
   group: "2A",
   attendance: 20,
-  addAttendance: function(){
+  addAttendance: function () {
     this.attendance = this.attendance + 1;
   }
 };
 
 //accessin items
 //student name
-console.log ('My name is',
-  student.name,"from",
+console.log('My name is',
+  student.name, "from",
   student["admission number"],
   "university"
 );
@@ -135,14 +135,14 @@ console.log(student.attendance); //21
 
 //array of objects 
 let bbit_2b = [
-  {adm: 223251, name: "Blessing"},
-  {adm: 192977, name: "Ryan"},
-  {adm: 222024, name: "Ambrose"},
-  {adm: 220941, name: "Neema"},
+  { adm: 223251, name: "Blessing" },
+  { adm: 192977, name: "Ryan" },
+  { adm: 222024, name: "Ambrose" },
+  { adm: 220941, name: "Neema" },
 ];
 
 //Printout the names of all students in bbit 2b using a loop 
-bbit_2b_students.forEach(function(student){
+bbit_2b_students.forEach(function (student) {
   console.log(student.name);
 });
 
@@ -178,3 +178,46 @@ let aboutParagraph = document.querySelector("#about p");
 //change its text
 aboutParagraph.textContent = "This text was changed!";
 aboutParagraph.computedStyleMap.color = "red";
+
+// setting/setter - updating the page from js
+const previewImage = document.querySelector("img");
+console.log(previewImage)
+
+//via the DOM
+previewImage.setAttribute("title", "New Title of Image");
+previewImage.setAttribute("alt", "New alternate text for the image");
+console.log(previewImage.alt);
+console.log(previewImage.title);
+
+
+//event handling - events (user events - click, key events, scroll)
+
+//get the.....
+let changeTextBtn = document.querySelector("#changeText");
+let demoTextBtn = document.querySelector("#demoText");
+
+changeTextBtn.addEventListener("click", function (event) {
+  console.log("someone clicked me!");
+  demoText.textContent = "I have been changed when you clicked";
+  demoText.syle.color = "orange";
+  demoText.style.fontSize = "16px";
+});
+
+
+let highlightSectionBtn = document.querySelector("#highlightSectionBtn");
+highlightSectionBtn.addEventListener("click", function (event) {
+  //one
+  document.querySelectorAll("#about").classList.toggle("section-highlight");
+  //all
+  // document.querySelectorAll("section").classList.toggle("section-highlight");
+
+  document.querySelectorAll("section").forEach(function (section) {
+    section.classList.toggle("section-highlight");
+  });
+});
+
+
+document.querySelector("#nameInput").addEventListener("input",function(event){
+  document.querySelector("#nameOutput").textContent = 
+  "Hello" + document.querySelector("#nameInput").value + "!";
+});
