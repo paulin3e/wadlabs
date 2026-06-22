@@ -217,7 +217,65 @@ highlightSectionBtn.addEventListener("click", function (event) {
 });
 
 
-document.querySelector("#nameInput").addEventListener("input",function(event){
-  document.querySelector("#nameOutput").textContent = 
-  "Hello" + document.querySelector("#nameInput").value + "!";
+document.querySelector("#nameInput").addEventListener("input", function (event) {
+  document.querySelector("#nameOutput").textContent =
+    "Hello" + document.querySelector("#nameInput").value + "!";
 });
+
+//case4 character counter
+let gtaCommentTextAreaa = document.querySelector("#commentInput");
+let charCountParagraph = document.querySelector("#charCount");
+
+gtaCommentTextAreaa.addEventListener("input", function (e) {
+  //  console.log("typing...")
+
+  let numberOfChars = gtaCommentTextAreaa.value.length;
+  //console.log("number of character: ",numberOfChars);
+  charCountParagraph.textContent = "Characters: " + numberOfChars;
+
+  //prevent user from typing after 60
+  if (numberOfChars >= 60) {
+    e.preventDefault();
+  } else {
+    charCountParagraph.textContent = "Characters: " + numberOfChars
+
+  }
+});
+
+
+//case5
+let keyOutputParagraph = document.querySelector("#keyOutput");
+
+document.addEventListener("keydown", function (event) {
+  keyOutputParagraph.textContent = "You pressed: " + event.key;
+
+});
+
+//case6
+let wishlistInput = document.querySelector("#wishlistInput");
+let wishListButton = document.querySelector("#wishlistForm button");
+//<ul> 
+let wishListItems = document.querySelector("wishlistItems");
+
+wishListButton.addEventListener("click", function (event) {
+  event.preventDefault();
+
+let wishListInputValue = wishlistInput.value;
+  //console.log(wishListInputValue);
+
+  if(wishListInputValue != "") {
+  
+    let li = document.createElement("li");
+  li.textContent = wishListInputValue;
+
+
+  wishListItems.appendChild(li);
+
+
+  wishlistInput.value = "";
+}
+  
+
+
+
+})
